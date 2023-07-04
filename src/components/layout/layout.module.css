@@ -1,0 +1,10 @@
+.header {
+  padding: 20px 10px;
+  background-color: rgb(21, 207, 52);
+  outline: rgb(190, 144, 144);
+}
+.linksMain {
+  margin-left: 20px;
+  color: rgb(170, 9, 178);
+  text-decoration: none;
+}
