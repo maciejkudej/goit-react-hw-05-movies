@@ -8,13 +8,6 @@ const MoviesDetails = lazy(() => import('../pages/movieDetails/MovieDetails'));
 const Cast = lazy(() => import('../components/cast/Cast'));
 const Reviews = lazy(() => import('../components/reviews/Reviews'));
 
-// import { Home } from '../pages/home/Home';
-// import { Movies } from '../pages/movies/Movies';
-// import { Layout } from '../components/layout/Layout';
-// import { MoviesDetails } from '../pages/movieDetails/MovieDetails';
-// import { Cast } from '../components/cast/Cast';
-// import { Reviews } from '../components/reviews/Reviews';
-
 export const App = () => {
   return (
     <BrowserRouter>
