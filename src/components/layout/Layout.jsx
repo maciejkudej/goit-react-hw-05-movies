@@ -1,8 +1,9 @@
+import { Suspense } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import css from './layout.module.css';
 
-export const Layout = () => {
+const Layout = () => {
   return (
     <>
       <header className={css.header}>
@@ -15,8 +16,11 @@ export const Layout = () => {
           </Link>
         </nav>
       </header>
-      <Outlet />
+      <Suspense>
+        <Outlet />
+      </Suspense>
       <ToastContainer />
     </>
   );
 };
+export default Layout;

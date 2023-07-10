@@ -5,7 +5,7 @@ import { getMoviesById } from 'services/api';
 import css from './MovieDetails.module.css';
 import { Radio } from 'react-loader-spinner';
 
-export const MoviesDetails = () => {
+const MoviesDetails = () => {
   const [movieData, setMovieData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -99,3 +99,4 @@ export const MoviesDetails = () => {
     </section>
   );
 };
+export default MoviesDetails;

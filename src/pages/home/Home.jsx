@@ -5,7 +5,7 @@ import { Radio } from 'react-loader-spinner';
 import { MoviesList } from 'components/moviesList/MoviesList';
 import css from './home.module.css';
 
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
@@ -47,3 +47,5 @@ export const Home = () => {
     </section>
   );
 };
+
+export default Home;

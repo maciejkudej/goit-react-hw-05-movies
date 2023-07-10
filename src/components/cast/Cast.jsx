@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import css from './Cast.module.css';
 import { getCast } from 'services/api';
 
-export const Cast = () => {
+const Cast = () => {
   const { moviesId } = useParams();
   const [error, setError] = useState('');
   const [movieData, setMovieData] = useState([]);
@@ -56,3 +56,4 @@ export const Cast = () => {
     <h4>There is not any information about it for now</h4>
   );
 };
+export default Cast;

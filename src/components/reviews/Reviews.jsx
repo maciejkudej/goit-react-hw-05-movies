@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { getReviews } from 'services/api';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { moviesId } = useParams();
   const [error, setError] = useState('');
   const [movieData, setMovieData] = useState([]);
@@ -52,3 +52,4 @@ export const Reviews = () => {
     <h4>There is not any reviews for now</h4>
   );
 };
+export default Reviews;
